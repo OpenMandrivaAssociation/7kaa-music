@@ -2,7 +2,7 @@
 
 Name:		%{oname}-music
 Version:	2.13
-Release:	%mkrel 2
+Release:	3
 Summary:	Game music files for Seven Kingdoms: Ancient Adversaries
 Group:		Games/Strategy
 License:	Freeware
@@ -20,15 +20,17 @@ Game music files used by Seven Kingdoms: Ancient Adversaries game.
 %build
 
 %install
-%__rm -rf %{buildroot}
-
-%__mkdir_p %{buildroot}%{_datadir}/%{oname}/music
-%__cp -r music/* %{buildroot}%{_datadir}/%{oname}/music/
-
-%clean
-%__rm -rf %{buildroot}
+mkdir -p %{buildroot}%{_datadir}/%{oname}/music
+cp -r music/* %{buildroot}%{_datadir}/%{oname}/music/
 
 %files
 %doc COPYING-Music.txt README-Music.txt
 %{_datadir}/%{oname}/music
+
+
+
+%changelog
+* Fri Mar 23 2012 Andrey Bondrov <abondrov@mandriva.org> 2.13-2
++ Revision: 786272
+- imported package 7kaa-music
 
