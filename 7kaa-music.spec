@@ -2,7 +2,7 @@
 
 Name:		%{oname}-music
 Version:	2.13
-Release:	3
+Release:	4
 Summary:	Game music files for Seven Kingdoms: Ancient Adversaries
 Group:		Games/Strategy
 License:	Freeware
