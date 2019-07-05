@@ -2,7 +2,7 @@
 
 Name:		%{oname}-music
 Version:	2.13
-Release:	4
+Release:	5
 Summary:	Game music files for Seven Kingdoms: Ancient Adversaries
 Group:		Games/Strategy
 License:	Freeware
@@ -20,13 +20,12 @@ Game music files used by Seven Kingdoms: Ancient Adversaries game.
 %build
 
 %install
-mkdir -p %{buildroot}%{_datadir}/%{oname}/music
-cp -r music/* %{buildroot}%{_datadir}/%{oname}/music/
+mkdir -p %{buildroot}%{_gamesdatadir}/%{oname}/music
+cp -r music/* %{buildroot}%{_gamesdatadir}/%{oname}/music/
 
 %files
 %doc COPYING-Music.txt README-Music.txt
-%{_datadir}/%{oname}/music
-
+%{_gamesdatadir}/%{oname}/music
 
 
 %changelog
