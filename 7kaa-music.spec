@@ -1,8 +1,8 @@
 %define		oname	7kaa
 
 Name:		%{oname}-music
-Version:	2.13
-Release:	5
+Version:	2.15.0
+Release:	1
 Summary:	Game music files for Seven Kingdoms: Ancient Adversaries
 Group:		Games/Strategy
 License:	Freeware
