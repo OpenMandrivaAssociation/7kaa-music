@@ -6,7 +6,7 @@ Release:	1
 Summary:	Game music files for Seven Kingdoms: Ancient Adversaries
 Group:		Games/Strategy
 License:	Freeware
-URL:		http://7kfans.com/
+URL:		https://7kfans.com/
 Source0:	http://www.7kfans.com/downloads/%{name}.tar.bz2
 Suggests:	%{oname} >= %{version}
 BuildArch:	noarch
